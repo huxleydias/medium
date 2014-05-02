@@ -1,6 +1,6 @@
  /*
 Theme Name: Medium WP
-Theme URI: http://www.huxleydias.com.br
+Theme URI: http://github.com/huxleydias/medium
 Description: Tema desenvolvida para o site pessoal de Huxley Dias, baseado no layout do Medium (twitter) <a href="http://www.huxleydias.com.br/">wwwhuxleydias.com.br</a>
 Author: Huxley Dias
 Version: 1.3
@@ -48,19 +48,34 @@ html, body, .container-page{
     display: block;
     padding: 0
 }
-.container-fluid{
+.container-fluid, .screen-content{
     width:100%;
+    height:100%;
     margin:0;
     height:auto;
     position: relative;
     float: left;
 }
+.screen-content{
+  background: #222;
+  z-index: 5;
+}
+.screem-background{
+  background-repeat: no-repeat;background-position:center center; -webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;
+  height: 240px;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
 .main{
     float: left;
     width:100%;
     display:block;
-    margin:0;
+    margin:240px 0 0 0;
     padding: 0;
+    background: #fff;
+    position:relative;
+    z-index: 10;
 
 }
 /*nav*/
@@ -75,9 +90,8 @@ html, body, .container-page{
 }
 .content{
     width:640px; 
-    margin:0 auto; 
-    padding: 20px 0;
-    overflow: hidden;
+    margin:0  auto; 
+    padding: 0 0 20px 0;
     height:auto;
     position: relative;
     clear: both;
@@ -198,10 +212,10 @@ aside .widget h3{
 
 /*Author*/
 .author-box{
-  background: #fff;
   width:420px;
   display: block;
-  margin: 8% auto
+  margin:-50px auto 50px auto;
+  z-index: 20;
 }
 .author-avatar-link{
     margin: 0 auto;

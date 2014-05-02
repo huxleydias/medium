@@ -17,19 +17,22 @@
 </head>
 <body id="huxleydias">
         <div class="container-page">
-                <nav class="site-nav" tabindex="-1">
+            <div class="screen-content">
+                <div class="screem-background" style="background-image:url(<?php bloginfo( 'template_directory' );?>/img/nascer-do-sol-praia-da-baleia-serra-es-por-huxley-dias.jpg);">oiaois</div>
+                <nav class="site-nav">
 
                 </nav>
                 <div class="main">
-                        <div class="content">
-                                <?php include('author-box.php'); ?>
-                                <?php if (have_posts()) : ?>
-                                <ul class="posts"> 
-                                        <?php get_template_part( 'loop' , 'entry') ?>                      
-                                        <?php if (function_exists("pagination")) { pagination($additional_loop->max_num_pages); } ?>
-                                </ul>
-                                <?php endif; ?>
-              </div>
+                    <div class="content">
+                        <?php include('author-box.php'); ?>
+                        <?php if (have_posts()) : ?>
+                        <ul class="posts"> 
+                            <?php get_template_part( 'loop' , 'entry') ?>                      
+                            <?php if (function_exists("pagination")) { pagination($additional_loop->max_num_pages); } ?>
+                        </ul>
+                    <?php endif; ?>
+                </div>
+            </div>
       </div>
 </div>
 </body>
