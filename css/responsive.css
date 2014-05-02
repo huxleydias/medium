@@ -1,0 +1,74 @@
+/*Responsive Layout*/
+@media (max-width: 480px) {
+    .hide-phone{display: none;}
+    .container-fluid{
+        width: 96%;
+        min-width:320px;
+        padding: 0 2%;
+        float: left;
+    }
+    .content{
+        width:100% !important; /*define a largura máxima do elemento*/
+    }
+    .author-box{width: 320px;}
+    #logo{
+        width: 100%;
+        float: left;
+    }
+    #logo h2, #logo h2 span{
+        text-align: center;
+        float: none;
+    }
+    header nav{
+    width: 100% ;
+    float: left;
+    }
+    header nav>a{
+    width: 100% ;
+    float: left;
+    }
+    header nav>ul{
+    width: 100% ;
+    float: left;
+    }
+    header nav > ul > li{
+        width: 100%;
+        float: left;
+    }
+    header nav > ul > li a{
+    width: 96% !important;
+    float: left;
+    padding: 2%;
+    text-align: center;
+    color: #fff;
+    }
+    #feature .content{
+      padding:60px 0;
+    }
+    #feature h2, #feature p{
+        width: 100% !important;
+    }
+    #feature h2{
+      font-size: 32px;
+    }
+    .recent-list li{
+        float: left;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .footer-box{
+    width: 100%;
+    float: left;
+    }
+    article, aside, .archive, .posts{
+        width: 90%;
+        padding: 5%;
+        margin: 0;
+        float: left;
+    }
+    article h1{
+      font-size: 23px;
+    }
+
+}
