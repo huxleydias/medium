@@ -18,9 +18,8 @@
 <body id="huxleydias">
         <div class="container-page">
             <div class="screen-content">
-                <div class="screem-background" style="background-image:url(<?php bloginfo( 'template_directory' );?>/img/nascer-do-sol-praia-da-baleia-serra-es-por-huxley-dias.jpg);">oiaois</div>
+                <div class="screem-background" style="background-image:url(<?php bloginfo( 'template_directory' );?>/img/nascer-do-sol-praia-da-baleia-serra-es-por-huxley-dias.jpg);"></div>
                 <nav class="site-nav">
-
                 </nav>
                 <div class="main">
                     <div class="content">

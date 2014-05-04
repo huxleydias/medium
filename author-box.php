@@ -9,9 +9,9 @@
             <img src="https://d262ilb51hltx0.cloudfront.net/fit/c/120/120/0*ForzYDG2DBQ7fzfw.jpeg" alt="Avatar de Huxley Dias" itemprop="photo" width="120" height="120" class="author-avatar-img">
     </a>
     <h1 intemprop="name" class="author-name">
-            <a href="<?php bloginfo('url') ?>"  title="Huxley Dias"  itemprop="name">Huxley Dias</a>
+            <a href="<?php bloginfo('url') ?>"  title="Huxley Dias"  itemprop="name"><?php bloginfo('name');?></a>
     </h1>
-    <p class="author-description"><span itemprop="title">Front-end designer</span>, estudante e músico.</p>
+    <p class="author-description" itemprop="title"><?php bloginfo('description');?></p>
     <p class="author-links">
             <a href="http://plus.google.com/u/1/117772548638325354735" target="_blank" Title="Huxley Dias no Google Plus" rel="Author">Google+</a>, 
             <a href="http://twitter.com/huxleydias" target="_blank" Title="Huxley Dias no Twitter" rel="Author">Twitter</a>, 

@@ -62,16 +62,25 @@ html, body, .container-page{
 }
 .screem-background{
   background-repeat: no-repeat;background-position:center center; -webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;
-  height: 240px;
+  height: 360px;
   position: fixed;
   width: 100%;
   z-index: 1;
+}
+.screem-overlay{
+  height: 360px;
+  width: 100%;
+  z-index: 2;
+  background: url(img/background-overlay.png);
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 .main{
     float: left;
     width:100%;
     display:block;
-    margin:240px 0 0 0;
+    margin:360px 0 0 0;
     padding: 0;
     background: #fff;
     position:relative;
@@ -113,6 +122,7 @@ html, body, .container-page{
     padding: 20px 0;
 }
 .breadcrumbs{
+   margin-top: 15px;
     float: left;
     width: 100%;
 }
@@ -165,8 +175,8 @@ article .meta, .archive .meta{
 }
 article p{
      font-family: 'Gilda Display', serif;
-    font-size: 14px;
-    color: #666;
+    font-size: 15px;
+    color: #333;
     line-height: 200%;
     margin-bottom: 15px;
 }
@@ -214,7 +224,7 @@ aside .widget h3{
 .author-box{
   width:420px;
   display: block;
-  margin:-50px auto 50px auto;
+  margin:-60px auto 50px auto;
   z-index: 20;
 }
 .author-avatar-link{
