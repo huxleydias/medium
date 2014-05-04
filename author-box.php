@@ -1,7 +1,7 @@
 <?php
 /**
  * @package WordPress
- * @subpackage Huxley Dias
+ * @subpackage Medium WP
  */
 ?>
 <div class="widget author-box" itemscope itemtype="http://schema.org/Person">
@@ -13,9 +13,9 @@
     </h1>
     <p class="author-description" itemprop="title"><?php bloginfo('description');?></p>
     <p class="author-links">
-            <a href="http://plus.google.com/u/1/117772548638325354735" target="_blank" Title="Huxley Dias no Google Plus" rel="Author">Google+</a>, 
-            <a href="http://twitter.com/huxleydias" target="_blank" Title="Huxley Dias no Twitter" rel="Author">Twitter</a>, 
-            <a href="https://www.facebook.com/huxdias" target="_blank" Title="Huxley Dias no Facebook" rel="Author">Facebook</a>, 
-            <a href="http://br.linkedin.com/in/huxleydias" target="_blank" Title="Huxley Dias no Linkedin" rel="Author">Linkedin</a>
+        <a href="http://plus.google.com/u/1/117772548638325354735" target="_blank" Title="Huxley Dias no Google Plus" rel="Author">Google+</a>, 
+        <a href="http://twitter.com/huxleydias" target="_blank" Title="Huxley Dias no Twitter" rel="Author">Twitter</a>, 
+        <a href="https://www.facebook.com/huxdias" target="_blank" Title="Huxley Dias no Facebook" rel="Author">Facebook</a>, 
+        <a href="http://br.linkedin.com/in/huxleydias" target="_blank" Title="Huxley Dias no Linkedin" rel="Author">Linkedin</a>
     </p>
 </div>

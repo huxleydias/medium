@@ -1,3 +1,9 @@
+<?php
+/**
+* @package WordPress
+* @subpackage Medium WP
+*/
+?>
 <?php while (have_posts()) : the_post(); ?>  
 
 <?php

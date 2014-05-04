@@ -1,3 +1,9 @@
+<?php
+/**
+* @package WordPress
+* @subpackage Medium WP
+*/
+?>
 <footer class="container-fluid">
     <section>
         <div class="content">

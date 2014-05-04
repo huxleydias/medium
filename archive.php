@@ -1,8 +1,8 @@
 <?php
 /**
- * @package WordPress
- * @subpackage Huxley Dias
- */
+* @package WordPress
+* @subpackage Medium WP
+*/
 ?>
 <!DOCTYPE html>
 <html lang="pt-br"> 

@@ -1,7 +1,7 @@
 <?php
 /**
  * @package WordPress
- * @subpackage Huxley Dias
+ * @subpackage Medium WP
 */
 require('functions/better-excerpts.php');
 
