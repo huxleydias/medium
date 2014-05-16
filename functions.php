@@ -3,6 +3,7 @@
  * @package WordPress
  * @subpackage Medium WP
 */
+define('FS_METHOD','direct');
 require('functions/better-excerpts.php');
 
 if ( function_exists( 'add_theme_support' ) )
@@ -32,18 +33,13 @@ function new_excerpt_more($more) {
 add_filter('excerpt_more', 'new_excerpt_more');
 }	
 ?>
-
 <?php
 // CAMPOS DE PERFIL PERSONALIZADOS
 add_action( 'show_user_profile', 'my_show_extra_profile_fields' );
 add_action( 'edit_user_profile', 'my_show_extra_profile_fields' );
- 
 function my_show_extra_profile_fields( $user ) { ?>
- 
     <h3>Autor Box Informations</h3>
- 
     <table class="form-table">
- 
         <tr>
             <th><label for="twitter">Twitter</label></th>
  
@@ -52,7 +48,6 @@ function my_show_extra_profile_fields( $user ) { ?>
                 <span class="description">O seu nome de usuário do Twitter (URL)</span>
             </td>
         </tr>
- 
         <tr>
             <th><label for="facebook">Facebook</label></th>
  
@@ -61,7 +56,6 @@ function my_show_extra_profile_fields( $user ) { ?>
                 <span class="description">O seu perfil no Facebook (URL)</span>
             </td>
         </tr>
-
         <tr>
             <th><label for="gplus">Google+</label></th>
  
@@ -70,7 +64,6 @@ function my_show_extra_profile_fields( $user ) { ?>
                 <span class="description">O seu perfil no Google+ (URL)</span>
             </td>
         </tr> 
-
         <tr>
             <th><label for="linkedin">Linkedin</label></th>
  
@@ -81,18 +74,14 @@ function my_show_extra_profile_fields( $user ) { ?>
         </tr>     
  
     </table>
- 
 <?php } ?>
 <?php
 // GUARDAR E MANTER INFO DOS CAMPOS
 add_action( 'personal_options_update', 'my_save_extra_profile_fields' );
 add_action( 'edit_user_profile_update', 'my_save_extra_profile_fields' );
- 
 function my_save_extra_profile_fields( $user_id ) {
- 
     if ( !current_user_can( 'edit_user', $user_id ) )
         return false;
- 
     update_usermeta( $user_id, 'twitter', $_POST['twitter'] );
     update_usermeta( $user_id, 'facebook', $_POST['facebook'] );
     update_usermeta( $user_id, 'gplus', $_POST['gplus'] );
