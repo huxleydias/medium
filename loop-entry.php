@@ -33,22 +33,23 @@
 
         <?php } elseif( get_post_type() == 'post') { ?>
 
-        <li itemscope itemtype="http://schema.org/Article">
+        <li itemscope itemtype="http://schema.org/BlogPosting">
             <?php //if ( has_post_thumbnail() ) { the_post_thumbnail('archive-thumb', array('intemprop' => 'image'));} ?>
             <h2 itemprop="name">
-                <a href="<?php the_permalink(); ?>"  title="<?php the_title(); ?>"><?php the_title(); ?></a>
+                <a href="<?php the_permalink(); ?>"  title="<?php the_title(); ?>" itemprop="name url"><?php the_title(); ?></a>
             </h2>
-            <p class="meta"><time datetime="<?php the_time('d M Y'); ?>" itemprop="dateCreated"><?php the_time('d,M,Y'); ?></time> - 
-                <span class="post-category" itemprop="category"><?php
+            <p class="meta">
+                <time datetime="<?php the_time('d M Y'); ?>" itemprop="dateCreated"><?php the_time('d,M,Y'); ?></time> - 
+                <span class="post-category" itemprop="genre"><?php
                     $category = get_the_category(); 
                     echo $category[0]->cat_name;
-                    ?></span>
-                    por: <em itemprop="author"><?php the_author(''); ?></em>
+                    ?>
+                </span>
+                <meta name="author" content="<?php the_author(''); ?>">
             </p>
             <p itemprop="description">
-                <?php echo excerpt('20'); ?>
+                <?php echo excerpt('27'); ?>
             </p>
-
         </li>
 
     <?php } 
