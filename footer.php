@@ -18,6 +18,14 @@
 </footer>
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <script type="text/javascript">
+    jQuery('.story-cover-arrow').click(function(){
+        jQuery('html, body').animate({scrollTop: jQuery('.main').offset().top + 0}, 1000);
+        jquery.('.crumb-category').click(function(){
+            _gaq.push(['_trackEvent', 'Breadcrumb', 'Voltar para home']);
+        });
+    });
+</script>
+<script type="text/javascript">
 var _gas = _gas || [];
 _gas.push(['_setAccount', 'UA-42679711-1']); 
 _gas.push(['_setDomainName', '.huxleydias.com.br']); 

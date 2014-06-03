@@ -13,17 +13,17 @@
     </h1>
     <p class="author-description" itemprop="title"><?php bloginfo('description');?></p>
     <p class="author-links">
-        <?php if ( $curauth->gplus ) { ?>
-            <a href="<?php echo $curauth->gplus; ?>" Title="<?php bloginfo('name');?> no Google Plus" target="_blank">Google+</a>
-        <?php } ?>
-        <?php if ( $curauth->twitter ) { ?>
-            <a href="<?php echo $curauth->twitter; ?>" Title="<?php bloginfo('name');?> no Twitter" target="_blank">Twitter</a>
-        <?php } ?>
-        <?php if ( $curauth->facebook ) { ?>
-            <a href="<?php echo $curauth->facebok; ?>" Title="<?php bloginfo('name');?> no Facebook" target="_blank">Facebook</a>
-        <?php } ?>
-        <?php if ( $curauth->linkedin ) { ?>
-            <a href="<?php echo $curauth->linkedin; ?>" Title="<?php bloginfo('name');?> no Linkedin" target="_blank">Linkedin</a>
-        <?php } ?>
+       
+            <a href="https://plus.google.com/117772548638325354735" Title="<?php bloginfo('name');?> no Google Plus" target="_blank" rel="nofollow">Google+</a>
+        
+        
+            <a href="http://twitter.com/huxleydias" Title="<?php bloginfo('name');?> no Twitter" target="_blank" rel="nofollow">Twitter</a>
+        
+            <a href="http://fb.com/huxdias" Title="<?php bloginfo('name');?> no Facebook" target="_blank" rel="nofollow">Facebook</a>
+        
+        
+            <a href="http://br.linkedin.com/in/huxleydias" Title="<?php bloginfo('name');?> no Linkedin" target="_blank" rel="nofollow">Linkedin</a>
+        
     </p>
+    
 </div>

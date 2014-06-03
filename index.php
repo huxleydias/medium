@@ -28,10 +28,11 @@
         <link rel="icon" type="image/png" href="<?php bloginfo( 'template_directory' );?>/img/favico.png" /> 
         <?php get_template_part('meta-header'); ?>
     </head>
-    <body id="huxleydias">
+    <body id="huxleydias" itemscope itemtype="http://schema.org/WebPage">
         <div class="container-page">
             <div class="screen-content">
                 <div class="screem-background" style="background-image:url(<?php bloginfo( 'template_directory' );?>/img/nascer-do-sol-praia-da-baleia-serra-es-por-huxley-dias.jpg);">
+                    <div class="screem-overlay"></div>
                 </div>
                 <nav class="site-nav">
                 </nav>

@@ -55,18 +55,19 @@ html, body, .container-page{
     float: left;
 }
 .screen-content{
-  background: #222;
-  z-index: 5;
+  background:#ccc;
+  float: left;
 }
 .screem-background{
   background-repeat: no-repeat;background-position:center center; -webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;
-  height: 360px;
-  position: fixed;
+  height:360px;
+  position:relative;
   width: 100%;
   z-index: 1;
+  float: left;
 }
 .screem-overlay{
-  height: 360px;
+  height: 100%;
   width: 100%;
   z-index: 2;
   background: url(img/background-overlay.png);
@@ -78,11 +79,11 @@ html, body, .container-page{
     float: left;
     width:100%;
     display:block;
-    margin:360px 0 0 0;
+    margin:0;
     padding: 0;
     background: #fff;
     position:relative;
-    z-index: 10;
+    z-index:3;
 }
 /*nav*/
 .site-nav{
@@ -176,6 +177,28 @@ margin: 15px 0;
 display: block;
 overflow-x: scroll;
 }
+.story-cover-arrow {
+content: '';
+display: block;
+width: 16px;
+height: 16px;
+position:absolute;
+bottom:40px;
+left: 50%;
+margin-left: -8px;
+border: 2px solid rgba(255,255,255,0.35);
+background: rgba(0,0,0,0);
+border-left: 0;
+border-top: 0;
+outline: none;
+-webkit-transform: rotate(45deg);
+-moz-transform: rotate(45deg);
+-ms-transform: rotate(45deg);
+-o-transform: rotate(45deg);
+transform: rotate(45deg);
+cursor: pointer;
+z-index: 5
+}
 /*Author*/
 .author-box{
   width:420px;
@@ -186,6 +209,10 @@ overflow-x: scroll;
 .author-box-post{
   width: 100%;
   float: left;
+  
+}
+.author-box-post .author-box{
+  margin: 0 auto !important
 }
 .author-avatar-link{
     margin: 0 auto;
@@ -250,7 +277,9 @@ article .author-box{
     width: 100%;
     float: left;
     border-top: solid 1px #EEE;
-    padding:30px 0;
+    padding:15px 0;
+    margin-top: 15px;
+    margin-bottom:0
 }
 .posts .wp-post-image{
     float: left;
@@ -269,7 +298,7 @@ article .author-box{
    color: #666665;
    font-size: 14px;
 }
-.disqus_thread{
+.disqus_thread, .comments-section{
     float: left;
     width: 100%;
     display: block;
