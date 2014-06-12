@@ -269,6 +269,9 @@ article .author-box{
   float: left;
   margin-top: 80px;
 }
+.content article p img{
+  width: 100%
+}
 .posts{
     width: 100%;
     float: left;
