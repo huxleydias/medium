@@ -45,19 +45,6 @@
                             <?php if (function_exists("pagination")) { pagination($additional_loop->max_num_pages); } ?>
                         </ul>
                     <?php endif; ?>
-                    <script>
-                    (function() {
-                        var cx = '005856890047907440529:ge5_xcc5y54';
-                        var gcse = document.createElement('script');
-                        gcse.type = 'text/javascript';
-                        gcse.async = true;
-                        gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
-                        '//www.google.com/cse/cse.js?cx=' + cx;
-                        var s = document.getElementsByTagName('script')[0];
-                        s.parentNode.insertBefore(gcse, s);
-                    })();
-                    </script>
-                    <gcse:search></gcse:search>
                     </div>
                 </div>
             </div>
